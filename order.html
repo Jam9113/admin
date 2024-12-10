@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order List</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #34495e;
+        }
+        .order-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .order-table th, .order-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .order-table th {
+            background-color: #34495e;
+            color: white;
+        }
+        .order-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .order-table tr:hover {
+            background-color: #ddd;
+        }
+        .order-table td button {
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .order-table td button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order List</h1>
+
+    <table class="order-table">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer ID</th>
+                <th>Customer Name</th>
+                <th>Order Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ECO001</td>
+                <td>ECOCU0981 </td>             
+                <td>Maria De Lima</td>
+                <td>2024-12-07</td>
+                <td>Completed</td>
+                <td><button>View</button></td>
+            </tr>
+            <tr>
+                
+                <td>ECO002</td>
+                <td>ECOCU0982 </td>    
+                <td>Juan dela Cruz</td>
+                <td>2024-12-0982</td>
+                <td>Pending</td>
+                <td><button>View</button></td>
+            </tr>
+            <tr>
+                <td>ECO003</td>
+                <td>ECOCU983</td>
+                <td>JAMIE KATRINA</td>
+                <td>2024-12-09</td>
+                <td>Shipped</td>
+                <td><button>View</button></td>
+            </tr>
+            <tr>
+                <td>ECO004</td>
+                <td>ECOCU984</td>
+                <td>Christopher John</td>
+                <td>2024-12-04</td>
+                <td>Cancelled</td>
+                <td><button>View</button></td>
+            </tr>
+            <tr>
+                <td>ECO004</td>
+                <td>ECOCU985</td>
+                <td>Maria</td>
+                <td>2024-12-15</td>
+                <td>Shipped</td>
+                <td><button>View</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
